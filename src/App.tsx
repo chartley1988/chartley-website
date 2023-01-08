@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import Header from './components/header/header'
+import Footer from './components/footer/footer'
 import NavMenu from './components/nav_menu/nav_menu'
+import AboutMe from './components/pages/about_me/about_me'
+import Home from './components/pages/home/home'
 import "./styles/main.css"
 
 function App() {
@@ -8,29 +11,12 @@ function App() {
 
   return (
     <>
-      <Header></Header>
-      <NavMenu></NavMenu>
+      <Header />
+      <NavMenu />
       <main>
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
+        <AboutMe />
       </main>
+      <Footer />
     </>
   )
 }

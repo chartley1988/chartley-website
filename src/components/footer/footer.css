@@ -1,0 +1,17 @@
+#footer-container {
+    background-color:var(--color-background-accent);
+    color: var(--color-accent-light);
+    padding: 1rem;
+    border-top: 2px solid var(--color-accent-light);
+
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer-container {
+        font-size: 1rem;
+
+    }
+}

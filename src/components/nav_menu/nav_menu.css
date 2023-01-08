@@ -1,10 +1,11 @@
 #nav-menu {
     background-color: var(--color-background-accent);
+    border-bottom: 2px solid var(--color-accent-light);
 }
 
 #nav-menu > ul {
     display: flex;
-    gap: 2rem;
+    gap: 6rem;
     justify-content: center;
     list-style: none;
 
@@ -15,6 +16,8 @@
 @media only screen and (max-width: 768px) {
     #nav-menu > ul {
         font-size: 1.8rem;
+        gap: 0rem;
+        justify-content: space-around;
 
     }
 }
