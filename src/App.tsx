@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import Header from './components/header/header'
 import NavMenu from './components/nav_menu/nav_menu'
 import "./styles/main.css"
