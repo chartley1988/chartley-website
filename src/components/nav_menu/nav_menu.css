@@ -5,6 +5,7 @@
 
 #nav-menu > ul {
     display: flex;
+    flex-direction: row;
     gap: 6rem;
     justify-content: center;
     list-style: none;
@@ -21,3 +22,4 @@
 
     }
 }
+

@@ -1,4 +1,5 @@
 #header-container {
+    position: relative;
     background-color:var(--color-background-accent);
     color: var(--color-accent-light);
     padding: 1rem;
@@ -9,9 +10,21 @@
     text-align: center;
 }
 
+#header-container > .social-bar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
 @media only screen and (max-width: 768px) {
     #header-container {
         font-size: 2rem;
 
+    }
+
+    #header-container > .social-bar {
+        visibility: hidden;
+    
     }
 }
