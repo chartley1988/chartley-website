@@ -1,0 +1,17 @@
+#header-container {
+    background-color:var(--color-background-accent);
+    color: var(--color-accent-light);
+    padding: 1rem;
+
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #header-container {
+        font-size: 2rem;
+
+    }
+}
