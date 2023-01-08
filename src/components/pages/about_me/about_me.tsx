@@ -1,5 +1,6 @@
 import React from 'react';
 import './about_me.css';
+import photo from '/Users/chartley/Documents/Projects/chartley-website/src/images/about_me_photo.jpg';
 
 
 function AboutMe() {
@@ -10,7 +11,7 @@ function AboutMe() {
 				Calgary area in Alberta, Canada. I have a passion for creating
 				things, sometimes from code, sometimes from wood.
 			</p>
-			<img src='src/assets/about_me_photo.jpg'></img>
+			<img src={photo}></img>
 		</div>
 	);
 }
