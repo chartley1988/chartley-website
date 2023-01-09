@@ -4,9 +4,10 @@ import './error.css';
 import Header from '../../header/header';
 import NavMenu from '../../nav_menu/nav_menu';
 import Footer from '../../footer/footer';
+import { ErrorResponse } from '@remix-run/router';
 
 function ErrorPage() {
-	const error = useRouteError();
+	const error: any = useRouteError();
 	console.error(error);
 
 	return (
