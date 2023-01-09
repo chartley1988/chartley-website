@@ -3,6 +3,8 @@ import { Router } from 'react-router';
 import './social_bar.css';
 import twitterLogo from '/Users/chartley/Documents/Projects/chartley-website/src/images/Twitter social icons - circle - blue.svg';
 import instaLogo from '/Users/chartley/Documents/Projects/chartley-website/src/images/Instagram_Glyph_Gradient_RGB.svg';
+import githubLogoWhite from '/Users/chartley/Documents/Projects/chartley-website/src/images/github-mark-white.svg';
+import githubLogoBlack from '/Users/chartley/Documents/Projects/chartley-website/src/images/github-mark.svg';
 
 function SocialBar() {
 	return (
@@ -19,6 +21,8 @@ function SocialBar() {
 				</svg>
 			</a>
 
+            <a href='https://github.com/chartley1988'><img src={githubLogoWhite} alt="Github Logo"></img></a>
+
 			<a href='https://twitter.com/chartley1988'>
 				<img src={twitterLogo} alt='Twitter Logo'></img>
 			</a>
@@ -26,6 +30,7 @@ function SocialBar() {
 			<a href='https://www.instagram.com/chartley1988/'>
 				<img src={instaLogo} alt='Instagram Logo'></img>
 			</a>
+
 		</div>
 	);
 }

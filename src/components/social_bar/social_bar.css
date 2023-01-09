@@ -4,12 +4,12 @@
     gap: 1rem;
 }
 
-.social-bar > img {
+.social-bar > a > img {
     width: 32px;
     height: 32px;
 }
 
-.social-bar > svg {
+.social-bar > a > svg {
     width: 32px;
     height: 32px;
 }
