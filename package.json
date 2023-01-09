@@ -11,6 +11,7 @@
     "typecheck": "vitest typecheck"
   },
   "dependencies": {
+    "@types/react-router": "^5.1.20",
     "eslint": "^8.31.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
