@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import projects_data from '/Users/chartley/Documents/Projects/chartley-website/src/data/projects_data.json';
 import githubLogo from '/Users/chartley/Documents/Projects/chartley-website/src/images/github-mark.svg';
 
-const iterate = (obj: Object) => {
+const iterate = (obj: any) => {
 	const objectArray: Object[] = [];
 	Object.keys(obj).forEach((key) => {
 		if (typeof obj[key] === 'object' && obj[key] !== null) {
@@ -16,12 +16,12 @@ const iterate = (obj: Object) => {
 
 const projectArray = iterate(projects_data);
 
-const listProjects = projectArray.map((project) => (
+const listProjects = projectArray.map((project: any) => (
 	<div className='project'>
 		<div className='project-header'>
 			<h2>{project.title}</h2>
 			<div>
-                <img src={githubLogo}></img>
+                <a href={project.github_url}><img src={githubLogo} /></a>
             </div>
 		</div>
 		<div className='content-wrapper'>
