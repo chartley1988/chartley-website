@@ -1,5 +1,5 @@
 .blog {
-
+    max-width: 900px;
     padding: 0.5rem 1rem 0.5rem 1rem;
 
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .blog > p {
-    width: 65%;
+    width: 100&;
     padding: 1rem;
     background-color: antiquewhite;
     border: 6px solid var(--color-accent-medium);

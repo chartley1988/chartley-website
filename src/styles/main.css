@@ -24,6 +24,14 @@ body {
     background-color: var(--color-background-accent);
 }
 
+h1 {
+    font-family: 'Tangerine', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
 main {
     padding: 0.5rem 3rem 0.5rem 3rem;
     min-height: 100vh;

@@ -16,7 +16,7 @@
 
 @media only screen and (max-width: 768px) {
     #nav-menu > ul {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         gap: 0rem;
         justify-content: space-around;
 
@@ -25,4 +25,14 @@
 
 #nav-menu > ul > li > a {
     color: var(--color-accent-light);
+    transform: scale(1) translateY(0px);
+    transition-duration: 0.2s;
+    display: block;
+    user-select: none;
+} 
+
+#nav-menu > ul > li > a:hover {
+    color: var(--color-accent-medium);
+    transform: scale(1.05) translateY(-2px) rotate(1deg);
+    transition-duration: 0.2s;
 } 

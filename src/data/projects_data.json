@@ -1,0 +1,17 @@
+{
+    "Solitaire": {
+        "title": "Solitaire",
+        "description": "Classic Solitaire!",
+        "image_src": "src/images/about_me_photo.jpg"
+    },
+    "Stacked Calculator": {
+        "title": "Stacked Calculator",
+        "description": "A line based calculator",
+        "image_src": "src/images/about_me_photo.jpg"
+    },
+    "This website": {
+        "title": "Chartley Designs",
+        "description": "This website is also a current project!",
+        "image_src": "src/images/about_me_photo.jpg"
+    }
+}
