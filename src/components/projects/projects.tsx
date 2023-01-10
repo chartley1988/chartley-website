@@ -17,7 +17,7 @@ const iterate = (obj: any) => {
 const projectArray = iterate(projects_data);
 
 const listProjects = projectArray.map((project: any) => (
-	<div className='project'>
+	<li className='project' key={project.key_value}>
 		<div className='project-header'>
 			<h2>{project.title}</h2>
 			<div>
@@ -29,7 +29,7 @@ const listProjects = projectArray.map((project: any) => (
 			<img src={project.image_src}></img>
 		</div>
         <a href={project.live_url}>Check it out!</a>
-	</div>
+	</li>
 ));
 
 function Projects() {

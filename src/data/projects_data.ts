@@ -10,6 +10,7 @@ const Data: Object[] = [
 		image_src: solitaire_img,
 		live_url: 'https://daver067.github.io/card-games/',
 		github_url: 'https://github.com/Daver067/card-games',
+		key_value: "solitaire",
 	},
 	{
 		title: 'Stacked Calculator',
@@ -17,6 +18,7 @@ const Data: Object[] = [
 		image_src: stacked_calculator_img,
 		live_url: 'https://chartley1988.github.io/chartleys-calculator/',
 		github_url: 'https://github.com/chartley1988/chartleys-calculator',
+		key_value: "calculator",
 	},
 	{
 		title: 'Chartley Designs',
@@ -24,6 +26,7 @@ const Data: Object[] = [
 		image_src: website_img,
 		live_url: 'https://chartley1988.github.io/chartley-website/',
 		github_url: 'https://github.com/chartley1988/chartley-website',
+		key_value: "website",
 	},
 ];
 
