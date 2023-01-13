@@ -9,7 +9,7 @@ import Home from './components/pages/home/home';
 
 const router = createBrowserRouter([
 	{
-		path: '/chartley-website/',
+		path: '/',
 		element: <App />,
 		errorElement: <ErrorPage />,
 		children: [

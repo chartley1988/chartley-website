@@ -11,15 +11,14 @@
 .projects > p {
 	width: 65%;
 	padding: 1rem;
-	background-color: antiquewhite;
 	border: 6px solid var(--color-accent-medium);
 	border-radius: 0.8rem;
 	font-size: 1.5rem;
 }
 
-.projects > h1 {
+.projects > h2 {
 	color: var(--color-accent-medium);
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 .projects > ul {
@@ -38,7 +37,7 @@
 	user-select: none;
 }
 
-.project-header > h2 {
+.project-header > h3 {
 	color: var(--color-accent-dark);
 	font-size: 1.8rem;
 }
@@ -57,9 +56,10 @@
 
 .project {
 	padding: 1rem;
-	background-color: antiquewhite;
+	background-color: white;
 	border-radius: 15px;
-	border: 6px var(--color-accent-medium) solid;
+	border: 4px var(--color-accent-light) solid;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 	display: flex;
 	flex-direction: column;
@@ -102,6 +102,16 @@
 		border-radius: 0.5rem;
 		border: 2px rgba(0, 0, 0, 0.662) solid;
 	}
+
+	.projects > h2 {
+		color: var(--color-accent-medium);
+		font-size: 2rem;
+	}
+
+	.project-header > h3 {
+		color: var(--color-accent-dark);
+		font-size: 1.6rem;
+	}
 }
 /* -------------------------------------------------------------- */
 
@@ -130,6 +140,13 @@
 	.project-header > h2 {
 		color: var(--color-accent-dark);
 		font-size: 1.6rem;
+
+		
+	}
+
+	.project-header > h3 {
+		color: var(--color-accent-dark);
+		font-size: 1.4rem;
 	}
 
 	.project > .content-wrapper > p {

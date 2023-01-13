@@ -20,6 +20,7 @@
 }
 
 .social-bar > *:hover {
+    filter: brightness(1.3);
     transform: scale(1.2);
     transition-duration: 0.2s;
 }
