@@ -11,13 +11,12 @@
 .projects > p {
 	width: 65%;
 	padding: 1rem;
-	border: 6px solid var(--color-accent-medium);
+	border: 6px solid var(--color-accent-light);
 	border-radius: 0.8rem;
 	font-size: 1.5rem;
 }
 
 .projects > h2 {
-	color: var(--color-accent-medium);
 	font-size: 3rem;
 }
 
@@ -38,7 +37,6 @@
 }
 
 .project-header > h3 {
-	color: var(--color-accent-dark);
 	font-size: 1.8rem;
 }
 
@@ -84,6 +82,20 @@
 	object-fit: cover;
 	border-radius: 0.5rem;
 	border: 2px rgba(0, 0, 0, 0.662) solid;
+}
+
+.project > a {
+	background-color: var(--color-background-accent);
+	color: var(--color-accent-light);
+	width: max-content;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	align-self: flex-end;
+	margin: 1rem 0 1rem 0;
+
+	font-size: 1.5rem;
+	text-decoration: underline;
+	text-align: center;
 }
 /* -------------------------------------------------------------- */
 
@@ -160,5 +172,11 @@
 		object-fit: cover;
 		border-radius: 0.5rem;
 		border: 2px rgba(0, 0, 0, 0.662) solid;
+	}
+
+	.project > a {
+		font-size: 1.2rem;
+		text-decoration: underline;
+		margin: 0.75rem 0 0.75rem 0;
 	}
 }

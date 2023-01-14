@@ -3,6 +3,7 @@
     background-color:var(--color-background-accent);
     color: var(--color-accent-light);
     padding: 1rem;
+    z-index: 2;
 
     font-family: 'Tangerine', cursive;
     font-weight: 900;

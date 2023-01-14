@@ -1,27 +1,28 @@
 import React from "react";
 import './blog.css'
+import BlogData from "../../../data/blog_data";
+
+const iterate = (obj: any) => {
+	const objectArray: Object[] = [];
+	Object.keys(obj).forEach((key) => {
+		if (typeof obj[key] === 'object' && obj[key] !== null) {
+			objectArray.push(obj[key]);
+		}
+	});
+	return objectArray;
+};
+
+const entryArray = iterate(BlogData);
+
+const listPosts = entryArray.map((project: any) => (
+	<li className='blog-post' key={project.key_value}>
+		
+	</li>
+));
 
 function Blog () {
     return <div className="blog">
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
-
-        <p>
-        Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </p>
+        {listPosts}
     </div>
 };
 
