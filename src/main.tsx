@@ -6,6 +6,7 @@ import ErrorPage from './components/pages/error/error';
 import AboutMe from './components/pages/about_me/about_me';
 import Blog from './components/pages/blog/blog';
 import Home from './components/pages/home/home';
+import BlogPost from './components/pages/blog_post/blog_post';
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
 				path: 'home',
 				element: <Home />,
 			},
+			{
+				path: 'blog-post',
+				element: <BlogPost />,
+			},
+
 		],
 	},
 ]);

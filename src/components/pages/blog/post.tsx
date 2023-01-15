@@ -1,6 +1,7 @@
 import React from "react"
 import ReactMarkdown from 'react-markdown'
 import './post.css'
+import { Link } from "react-router-dom"
 
 interface BlogPostType {
     title: string,
@@ -9,11 +10,11 @@ interface BlogPostType {
 }
 
 function BlogPost ({title, post_date, content}: BlogPostType) {
-    console.log(post_date);
     return <li className="blog-post main-container">
-        <h3>{title}</h3>
-        <p>{post_date}</p>
-        <ReactMarkdown className="blog-markdown">{content}</ReactMarkdown>
+        <Link to='/blog-post' state={{title, post_date, content}}>
+            <h3>{title}</h3>
+        </Link>
+            <p>{post_date}</p>
     </li>
 }
 

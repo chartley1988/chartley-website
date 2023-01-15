@@ -2,6 +2,7 @@
     --color-background: #2c212e;
     --color-background-accent: #3a3952;
     --color-accent-light: #BCE784;
+    --desktop-width: 960px;
 
     font-size: 100%;
     font-family: 'Spectral', serif;
@@ -31,8 +32,8 @@ a {
 }
 
 .main-container {
-    width: 65%;
-	padding: 1rem;
+    width: var(--desktop-width);
+	padding: 1rem 2rem 1rem 2rem;
 	background-color: white;
 	border-radius: 15px;
 	border: 4px var(--color-accent-light) solid;

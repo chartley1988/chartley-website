@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './blog.css';
 import BlogData from '../../../data/blog_data';
 import BlogPost from './post';
+import { Link } from 'react-router-dom';
 
 function Blog() {
 	const [blogPosts, setBlogPosts] = useState([{
@@ -18,7 +19,6 @@ function Blog() {
 		const blog_data = fetch(URL)
 			.then((response) => response.json())
 			.then(({ result }) => {
-				console.log(result);
 				setBlogPosts(result);
 			});
 	}, []);
