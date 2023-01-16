@@ -1,16 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
+import getBlogPostData from "../blog/getBlogPostData";
 
 function BlogPost (props: any) {
-    const location = useLocation();
-    console.log(location.state);
+    const [postData, setPostData] = useState({
+        title: "",
+        post_date: "",
+        content: "",
+    })
+
+    const { slug } = useParams();
+    
+    useEffect(()=>{
+        getBlogPostData(slug).then((post)=>{
+            console.log(post);
+            setPostData(post[0]);
+        })
+    },[slug])
+    
+
 
     return <div className="main-container">
-        <h2>{location.state.title}</h2>
-        <p>{location.state.post_date}</p>
-        <ReactMarkdown>{location.state.content}</ReactMarkdown>
+        <h2>{postData.title}</h2>
+        <p>{postData.post_date}</p>
+        <ReactMarkdown>{postData.content}</ReactMarkdown>
     </div>
 }
 
