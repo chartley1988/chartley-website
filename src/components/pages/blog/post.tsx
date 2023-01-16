@@ -12,7 +12,7 @@ interface BlogPostType {
 
 function BlogPost ({title, post_date, content, post_id}: BlogPostType) {
     return <li className="blog-post main-container">
-        <Link to={'/blog-post' + `/${post_id}`} state={{title, post_date, content, post_id}}>
+        <Link to={'/blog-post' + `/${post_id}/`} state={{title, post_date, content, post_id}}>
             <h3>{title}</h3>
         </Link>
             <p>{post_date}</p>
