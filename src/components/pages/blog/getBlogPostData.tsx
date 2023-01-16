@@ -18,7 +18,8 @@ async function getBlogPostData(post_id: string | undefined) {
 		.then((response) => response.json())
 		.then(({ result }) => {
 			return result
-		});
+		})
+		.catch(console.error);;
 
 	return (
 		blog_data
