@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState} from "react";
+import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
 import getBlogPostData from "../blog/getBlogPostData";
 
-function BlogPost (props: any) {
+function BlogPost () {
     const [postData, setPostData] = useState({
         title: "",
         post_date: "",
