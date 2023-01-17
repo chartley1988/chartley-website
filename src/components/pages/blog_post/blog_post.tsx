@@ -1,31 +1,21 @@
-import { useEffect, useState} from "react";
-import { useParams } from "react-router-dom";
-import ReactMarkdown from 'react-markdown'
-import getBlogPostData from "../blog/getBlogPostData";
+import {  useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import './blog_post.css'
 
-function BlogPost () {
-    const [postData, setPostData] = useState({
-        title: "",
-        post_date: "",
-        content: "",
-    })
+function BlogPost() {
+	const data: any = useLoaderData();
+    console.log(data);
 
-    const { slug } = useParams();
-    
-    useEffect(()=>{
-        getBlogPostData(slug).then((post)=>{
-            console.log(post);
-            setPostData(post[0]);
-        })
-    },[slug])
-    
+	const [postData, setPostData] = useState(data[0]);
 
-
-    return <div className="main-container">
-        <h2>{postData.title}</h2>
-        <p>{postData.post_date}</p>
-        <ReactMarkdown>{postData.content}</ReactMarkdown>
-    </div>
+	return (
+		<div className='main-container'>
+			<h2>{postData.title}</h2>
+			<p>{postData.post_date}</p>
+			<ReactMarkdown>{postData.content}</ReactMarkdown>
+		</div>
+	);
 }
 
-export default BlogPost
+export default BlogPost;

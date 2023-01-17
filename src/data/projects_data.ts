@@ -1,6 +1,6 @@
-import solitaire_img from '/Users/chartley/Documents/Projects/chartley-website/src/images/solitaire_screenshot.jpg';
-import stacked_calculator_img from '/Users/chartley/Documents/Projects/chartley-website/src/images/stacked-calculator.jpg';
-import website_img from '/Users/chartley/Documents/Projects/chartley-website/src/images/chartleys_website_screenshot.jpg';
+import solitaire_img from '../images/solitaire_screenshot.jpg';
+import stacked_calculator_img from '../images/stacked-calculator.jpg';
+import website_img from '../images/chartleys_website_screenshot.jpg';
 
 const Data: Object[] = [
 	{

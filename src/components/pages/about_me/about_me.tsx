@@ -1,6 +1,6 @@
 import React from 'react';
 import './about_me.css';
-import photo from '/Users/chartley/Documents/Projects/chartley-website/src/images/about_me_photo.jpg';
+import photo from '../../../images/about_me_photo.jpg';
 
 function AboutMe() {
 	return (

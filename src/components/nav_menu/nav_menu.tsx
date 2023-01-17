@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NavMenu () {
     return <div id="nav-menu">
         <ul>
-            <li><Link to={'home'}>Home</Link></li>
+            <li><Link to={'..'}>Home</Link></li>
             <li><Link to={'blog'}>Blog</Link></li>
             <li><Link to={'about-me'}>About Me</Link></li>
         </ul>

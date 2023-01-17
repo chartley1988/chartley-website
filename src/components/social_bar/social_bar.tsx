@@ -1,10 +1,10 @@
 import React from 'react';
 import { Router } from 'react-router';
 import './social_bar.css';
-import twitterLogo from '/Users/chartley/Documents/Projects/chartley-website/src/images/Twitter social icons - circle - blue.svg';
-import instaLogo from '/Users/chartley/Documents/Projects/chartley-website/src/images/Instagram_Glyph_Gradient_RGB.svg';
-import githubLogoWhite from '/Users/chartley/Documents/Projects/chartley-website/src/images/github-mark-white.svg';
-import githubLogoBlack from '/Users/chartley/Documents/Projects/chartley-website/src/images/github-mark.svg';
+import twitterLogo from '../../images/Twitter social icons - circle - blue.svg';
+import instaLogo from '../..//images/Instagram_Glyph_Gradient_RGB.svg';
+import githubLogoWhite from '../..//images/github-mark-white.svg';
+import githubLogoBlack from '../..//images/github-mark.svg';
 
 function SocialBar() {
 	return (

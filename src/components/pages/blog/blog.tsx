@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './blog.css';
-import BlogPost from './post';
+import PostListing from './post';
 import getBlogData from './getBlogData';
+import { useLoaderData } from 'react-router';
 
 function Blog() {
-	const [blogPosts, setBlogPosts] = useState([{
-        date_posted: ''
-    }]);
+	const data: any = useLoaderData();
 
-	useEffect(() => {
-		getBlogData().then((data)=>{
-            setBlogPosts(data);
-        })
-	}, []);
+	const [blogPosts, setBlogPosts] = useState(data);
 
 	const loading = () => {
 		return <p>Loading</p>;
@@ -21,12 +16,12 @@ function Blog() {
 	return (
 		<ul className='blog'>
 			{blogPosts &&
-				blogPosts.map((post: any, index) => (
-					<BlogPost
+				blogPosts.map((post: any, index: number) => (
+					<PostListing
 						title={post.title}
 						post_date={post.date_posted.split('T')[0]}
 						content={post.content}
-                        post_id= {post.post_id}
+						post_id={post.post_id}
 						key={index}
 					/>
 				))}

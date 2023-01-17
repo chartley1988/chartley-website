@@ -2,7 +2,7 @@ import React from 'react';
 import './projects.css';
 import { Link } from 'react-router-dom';
 import projects_data from '../../data/projects_data';
-import githubLogo from '/Users/chartley/Documents/Projects/chartley-website/src/images/github-mark.svg';
+import githubLogo from '../../images/github-mark.svg';
 
 const iterate = (obj: any) => {
 	const objectArray: Object[] = [];
