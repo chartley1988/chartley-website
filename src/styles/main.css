@@ -36,9 +36,9 @@ a {
 	padding: 1rem 2rem 1rem 2rem;
 	background-color: white;
 	border-radius: 15px;
-	border: 4px var(--color-accent-light) solid;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     font-size: 1.5rem;
+    box-sizing: border-box;
 }
 
 main {
@@ -56,13 +56,22 @@ main {
 }
 
 p {
-
     padding: 1rem;
     font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+li {
+    list-style-position: inside;
+}
+
+@media only screen and (max-width: 828px) {
     main {
-        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+    }
+
+    .main-container {
+        width: 95%;
+        padding: 0.5rem;
+        border-radius: 0.75rem;
     }
 }

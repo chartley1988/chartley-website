@@ -10,10 +10,10 @@ interface BlogPostType {
     post_id: string,
 }
 
-function PostListing ({title, post_date, content, post_id}: BlogPostType) {
-    return <li className="blog-post main-container">
-        <Link to={'/blog' + `/${post_id}/`} state={{title, post_date, content, post_id}}>
-            <h3>{title}</h3>
+function PostListing ({title, post_date, post_id}: BlogPostType) {
+    return <li className="blog-list-entry main-container">
+        <Link to={'/blog' + `/${post_id}/`}>
+            {title}
         </Link>
             <p>{post_date}</p>
     </li>

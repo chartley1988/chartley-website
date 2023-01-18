@@ -1,0 +1,16 @@
+@media only screen and (max-width: 828px) {
+    .blog-post > h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .blog-post > h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .blog-post {
+        font-size: 1rem;
+    }
+}
+

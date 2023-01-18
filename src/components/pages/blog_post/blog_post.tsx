@@ -10,9 +10,9 @@ function BlogPost() {
 	const [postData, setPostData] = useState(data[0]);
 
 	return (
-		<div className='main-container'>
+		<div className='main-container blog-post'>
 			<h2>{postData.title}</h2>
-			<p>{postData.post_date}</p>
+			<p>{postData.date_posted.split('T')[0]}</p>
 			<ReactMarkdown>{postData.content}</ReactMarkdown>
 		</div>
 	);

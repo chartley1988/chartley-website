@@ -29,7 +29,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 828px) {
     #header-container {
         font-size: 2rem;
         padding: 1rem;

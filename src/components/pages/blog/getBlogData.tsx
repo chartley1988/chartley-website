@@ -17,7 +17,10 @@ async function getBlogData() {
 		.then(({ result }) => {
 			return result
 		})
-		.catch(console.error);
+		.catch((error) => {
+			console.log(error);
+			return null;
+		});
 
 	return (
 		blog_data
