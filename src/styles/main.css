@@ -1,5 +1,4 @@
 :root {
-    --color-background: #2c212e;
     --color-background-accent: #3a3952;
     --color-accent-light: #BCE784;
     --desktop-width: 960px;
@@ -42,7 +41,7 @@ a {
 }
 
 main {
-    padding: 0.5rem 3rem 2rem 3rem;
+    padding: 1.5rem 3rem 2rem 3rem;
     min-height: 100vh;
     height: 100%;
 

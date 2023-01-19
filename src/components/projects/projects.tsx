@@ -17,7 +17,7 @@ const iterate = (obj: any) => {
 const projectArray = iterate(projects_data);
 
 const listProjects = projectArray.map((project: any) => (
-	<li className='project' key={project.key_value}>
+	<li className='project main-container' key={project.key_value}>
 		<div className='project-header'>
 			<h3>{project.title}</h3>
 			<div>

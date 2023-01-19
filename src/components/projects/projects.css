@@ -56,8 +56,6 @@
 	padding: 1rem;
 	background-color: white;
 	border-radius: 15px;
-	border: 4px var(--color-accent-light) solid;
-	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 	display: flex;
 	flex-direction: column;
@@ -78,8 +76,8 @@
 
 .project > .content-wrapper > img {
 	width: 50%;
-	height: auto;
-	object-fit: cover;
+	align-self: center;
+	object-fit:scale-down;
 	border-radius: 0.5rem;
 	border: 2px rgba(0, 0, 0, 0.662) solid;
 }
@@ -96,6 +94,11 @@
 	font-size: 1.5rem;
 	text-decoration: underline;
 	text-align: center;
+}
+
+.projects > ul {
+	display: flex;
+	align-items: center;
 }
 /* -------------------------------------------------------------- */
 

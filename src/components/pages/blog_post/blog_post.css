@@ -1,3 +1,16 @@
+.blog-post > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-post > div > :nth-child(2) {
+    align-self: flex-start;
+    font-style: italic;
+    min-width: max-content;
+
+}
+
+
 @media only screen and (max-width: 828px) {
     .blog-post > h2 {
         font-size: 1.5rem;
