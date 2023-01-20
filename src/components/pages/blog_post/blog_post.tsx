@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import './blog_post.css';
@@ -7,7 +6,7 @@ function BlogPost() {
 	const data: any = useLoaderData();
 	console.log(data);
 
-	const [postData, setPostData] = useState(data[0]);
+	const postData = data[0];
 
 	return (
 		<div className='main-container blog-post'>

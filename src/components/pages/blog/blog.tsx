@@ -5,13 +5,7 @@ import getBlogData from './getBlogData';
 import { useLoaderData } from 'react-router';
 
 function Blog() {
-	const data: any = useLoaderData();
-
-	const [blogPosts, setBlogPosts] = useState(data);
-
-	const loading = () => {
-		return <p>Loading</p>;
-	};
+	const blogPosts: any = useLoaderData();
 
 	return (
 		<ul className='blog'>

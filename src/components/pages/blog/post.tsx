@@ -12,7 +12,7 @@ interface BlogPostType {
 
 function PostListing ({title, post_date, post_id}: BlogPostType) {
     return <li className="blog-list-entry main-container">
-        <Link to={'/blog' + `/${post_id}/`}>
+        <Link to={`/blog/${post_id}/`}>
             {title}
         </Link>
             <p>{post_date}</p>
